@@ -60,7 +60,7 @@ Build the `pic32prog` host tool from source at [github.com/kiffie/pic32prog-kvh]
 
 ![Hub ICSP connector](hub_conn_label.png)
 
-The ICSP header is located on the Hub board as shown above. Refer to the pinout tables in the prerequisite section for your programmer type.
+Connect the pic32 programmer to the Hub. The ICSP header is located on the Hub board as shown above. Refer to the pinout tables in the prerequisite section for your programmer type.
 
 ### Powering the Hub for Programming
 
@@ -136,9 +136,9 @@ The Hub has three SPI flash chips (2 MB each) that store configuration and firmw
 With the custom firmware running, use the bridge's command port (1984) to read each chip:
 
 ```bash
-python tools/brg-service.py <ip> spi read 0 -r backup_spi0.bin 0x0 0x200000
-python tools/brg-service.py <ip> spi read 1 -r backup_spi1.bin 0x0 0x200000
-python tools/brg-service.py <ip> spi read 2 -r backup_spi2.bin 0x0 0x200000
+python3 tools/brg-service.py <ip> spi read 0 -r backup_spi0.bin 0x0 0x200000
+python3 tools/brg-service.py <ip> spi read 1 -r backup_spi1.bin 0x0 0x200000
+python3 tools/brg-service.py <ip> spi read 2 -r backup_spi2.bin 0x0 0x200000
 ```
 
 This reads all 2 MB from each chip (chips 0, 1, 2).
