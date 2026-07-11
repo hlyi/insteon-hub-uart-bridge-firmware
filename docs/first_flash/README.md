@@ -64,7 +64,10 @@ The ICSP header is located on the Hub board as shown above. Refer to the pinout 
 
 ### Powering the Hub for Programming
 
+**Option 1: Use the Hub's own power supply**
+
 ---
+
 ⚠️ **CAUTION: MAINS VOLTAGE**
 
 The Hub 2245-222 power supply connects to mains (line) voltage. This poses a risk of electric shock.
@@ -76,8 +79,6 @@ The Hub 2245-222 power supply connects to mains (line) voltage. This poses a ris
 *Proceed at your own risk.*
 
 ---
-
-**Option 1: Use the Hub's own power supply**
 
 Plug the Hub into mains power. The board will be powered through its internal supply.
 
