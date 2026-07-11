@@ -64,7 +64,18 @@ The ICSP header is located on the Hub board as shown above. Refer to the pinout 
 
 ### Powering the Hub for Programming
 
-> **Warning:** The Hub 2245-222 power supply connects to mains voltage. Always disconnect the power cord before connecting or disconnecting the programmer. Even when powered off, capacitors can hold dangerous voltage — wait at least 30 seconds after unplugging before handling the board. Avoid touching any exposed wires or solder joints. Proceed at your own risk.
+---
+⚠️ **CAUTION: MAINS VOLTAGE**
+
+The Hub 2245-222 power supply connects to mains (line) voltage. This poses a risk of electric shock.
+
+**Always** unplug the power cord before connecting or disconnecting the programmer. Even after unplugging, internal capacitors can retain dangerous voltage — wait at least **30 seconds** before handling the board.
+
+**Do not** touch exposed wires, solder joints, or board traces while the Hub is plugged in. If you are not experienced with mains-powered electronics, use the external 3.3V option below instead.
+
+*Proceed at your own risk.*
+
+---
 
 **Option 1: Use the Hub's own power supply**
 
