@@ -26,7 +26,7 @@ This custom firmware replaces the entire stock firmware while keeping the same h
 
 ### First Time Installation
 
-See the detailed guide at `docs/first_flash/README.md` for step-by-step instructions covering:
+See the detailed guide at [`docs/first_flash/README.md`](docs/first_flash/README.md) for step-by-step instructions covering:
 
 - **Prerequisites:** Microchip programmer (Pickit/ICD/Snap) or DIY RP2040-based programmer
 - **Backup** the Hub's original firmware
@@ -37,9 +37,11 @@ See the detailed guide at `docs/first_flash/README.md` for step-by-step instruct
 
 ### Update firmware
 
-After the bootloader is installed, copy `fw/firmware_upgrade.hex` to the host machine and use the bridge's command port (1984) to upload:
+Clone this repository and run from the repo root:
 
-```
+```bash
+git clone https://github.com/hlyi/insteon-hub-uart-bridge-firmware.git
+cd insteon-hub-uart-bridge-firmware
 tools/brg-service.py <ip> firmware_upgrade -f fw/firmware_upgrade.hex
 ```
 
